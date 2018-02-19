@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="./../assets/css/bootstrap.css">
+<script src="./../assets/js/bootstrap.js"></script>
+
+<div class="row">
+  <h3>All contacts</h3>
+
+    <app-contact-item *ngFor="let contact of contacts"
+      [contact] = "contact"
+      (onDeleted)= "fetchContacts()"
+    >
+    </app-contact-item>
+
+
+<!-- <app-movie-item *ngFor="let movie of movies"
+  [movie] = "movie"
+  routerLink="/movieDetail/{{movie.identifier}}">
+</app-movie-item> -->
+</div>

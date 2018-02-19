@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="./../assets/css/bootstrap.css">
+<script src="./../assets/js/bootstrap.js"></script>
+
+<div class="row">
+  <div class="col-xs-8">
+    <div class="row" style="border: 1px solid black">
+      <div class="col-xs-8">
+        <h3>{{this.contact.name}}</h3>
+        <p>{{this.contact.phone}}</p>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6">
+            <img class="img-responsive" alt="Edit" (click)="editContact(this.contact)" src="assets/img/edit.png">
+          </div>
+          <div class="col-xs-6">
+            <img class="img-responsive" alt="Delete" (click)="deleteContact(this.contact)" src="assets/img/delete.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--<div class="visible-md-inline">-->
+  <!--</div>-->
+

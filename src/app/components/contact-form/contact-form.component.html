@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="./../assets/css/bootstrap.css">
+<script src="./../assets/js/bootstrap.js"></script>
+
+<div>
+  <h3>New contact</h3>
+  <p>
+    <input type="text" placeholder="Name" [(ngModel)] = "this.contact.name">
+  </p>
+  <p>
+    <input type="text" placeholder="Phone" [(ngModel)] = "this.contact.phone">
+  </p>
+  <p *ngIf="this.contact.name.length > 0 && this.contact.phone != ''">
+    <button (click)="saveContact()">Save contact</button>
+  </p>
+
+</div>
